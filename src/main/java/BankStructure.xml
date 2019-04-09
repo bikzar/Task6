@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bank>
+	<id_Intermediary_Number>15</id_Intermediary_Number>
+	<intermediary_Name>BNB Bank</intermediary_Name>
+	<credit_List>
+		<Credit creditType="companyCredit">
+			<credit_Name>First Step</credit_Name>
+			<currency_Type>DOLLOR</currency_Type>
+			<percentage>16.2</percentage>
+			<is_Active>true</is_Active>
+			<max_Credit_Size>500</max_Credit_Size>
+			<is_Closing>true</is_Closing>
+			<is_Fixed_Percentage>true</is_Fixed_Percentage>
+			<company_Size>MEDIUM</company_Size>
+		</Credit>
+		<Credit creditType="companyCredit">
+			<credit_Name>First Step</credit_Name>
+			<currency_Type>DOLLOR</currency_Type>
+			<percentage>16.2</percentage>
+			<is_Active>true</is_Active>
+			<max_Credit_Size>500</max_Credit_Size>
+			<is_Closing>true</is_Closing>
+			<is_Fixed_Percentage>true</is_Fixed_Percentage>
+			<company_Size>MEDIUM</company_Size>
+		</Credit>
+		<Credit creditType="companyCredit">
+			<credit_Name>First Step</credit_Name>
+			<currency_Type>DOLLOR</currency_Type>
+			<percentage>16.2</percentage>
+			<is_Active>true</is_Active>
+			<max_Credit_Size>500</max_Credit_Size>
+			<is_Closing>true</is_Closing>
+			<is_Fixed_Percentage>true</is_Fixed_Percentage>
+			<company_Size>MEDIUM</company_Size>
+		</Credit>
+		<Credit creditType="individualCredit">
+			<credit_Name>First Step</credit_Name>
+			<currency_Type>DOLLOR</currency_Type>
+			<percentage>2.2</percentage>
+			<is_Active>true</is_Active>
+			<max_Credit_Size>500000</max_Credit_Size>
+			<is_Closing>true</is_Closing>
+			<is_Fixed_Percentage>true</is_Fixed_Percentage>
+			<indiv_Credit_Type>FOR_HOUSE</indiv_Credit_Type>
+		</Credit>
+	</credit_List>
+</Bank>

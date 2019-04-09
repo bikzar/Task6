@@ -1,0 +1,9 @@
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="xmlBankFile">/home/sergey/eclipse-workspace/xmlparser/src/main/java/BankStructure.xml</entry>
+	<entry key="xsdBankFile">/home/sergey/eclipse-workspace/xmlparser/src/main/java/BankStructureXMLSchema.xsd</entry>
+	<entry key="creditType">creditType</entry>
+	<entry key="individualCredit">individualCredit</entry>
+	<entry key="companyCredit">companyCredit</entry>
+	<entry key="parserType">SAXPARSER</entry>
+</properties>

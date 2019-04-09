@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="Bank">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id_Intermediary_Number" type="xs:int" />
+				<xs:element name="intermediary_Name" type="xs:string" />
+				
+				<xs:element name="credit_List">
+					<xs:complexType>
+						<xs:sequence>
+							
+							<xs:element name="Credit" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										
+										<xs:element name="credit_Name" type="xs:string" />	
+										
+										<xs:element name="currency_Type">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="DOLLOR"/>
+													<xs:enumeration value="EURO"/>
+													<xs:enumeration value="RUSRUBL"/>
+													<xs:enumeration value="UAN"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										
+										<xs:element name="percentage">
+											<xs:simpleType>
+												<xs:restriction base="xs:double">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										
+										<xs:element name="is_Active" type="xs:boolean" />
+										
+										<xs:element name="max_Credit_Size">
+											<xs:simpleType>
+												<xs:restriction base="xs:double">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										
+										<xs:element name="is_Closing" type="xs:boolean" />
+										
+										<xs:element name="is_Fixed_Percentage" type="xs:boolean" />
+										
+										<xs:element name="company_Size" minOccurs="0" maxOccurs="unbounded">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="SMALL"/>
+													<xs:enumeration value="MEDIUM"/>
+													<xs:enumeration value="HUGE"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+											
+										<xs:element name="indiv_Credit_Type" minOccurs="0" maxOccurs="unbounded">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="FOR_CAR"/>
+													<xs:enumeration value="FOR_HOUSE"/>
+													<xs:enumeration value="CONSUMER_LOAN"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>	
+																				
+									</xs:sequence>
+									
+									<xs:attribute name="creditType" use="required">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="companyCredit"/>
+												<xs:enumeration value="individualCredit"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute> 
+									
+								</xs:complexType>
+							</xs:element>
+							
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
