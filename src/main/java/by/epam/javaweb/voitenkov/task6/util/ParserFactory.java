@@ -13,9 +13,7 @@ import by.epam.javaweb.voitenkov.task6.model.logic.handler.saxhandler.SAXHandler
  *
  *         Apr 8, 2019
  */
-public enum ParserFactory {
-
-	SAXPARSER, STAXPARSER, DOMPARSER;
+public class ParserFactory {
 
 	private static final String PARSER = SysConfigurator.getProperty("parser");
 	private static ParserFactory parserType;
